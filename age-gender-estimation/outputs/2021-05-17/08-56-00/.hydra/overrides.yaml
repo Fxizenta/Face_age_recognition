@@ -1,0 +1,2 @@
+- model.model_name=EfficientNetB3
+- train.batch_size=16

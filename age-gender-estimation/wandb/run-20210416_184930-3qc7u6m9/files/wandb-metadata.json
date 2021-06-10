@@ -1,0 +1,27 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.7.6",
+    "heartbeatAt": "2021-04-16T10:49:38.003508",
+    "startedAt": "2021-04-16T10:49:30.269399",
+    "docker": null,
+    "gpu": "GeForce RTX 2060",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--image_dir",
+        "data\\wiki_crop\\99"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/yu4u/age-gender-estimation.git",
+        "commit": "6af6148f6eb09bf16e7164490730c71c61c89f3e"
+    },
+    "email": "kaikaikaixuanmen@qq,com",
+    "root": "G:/deepface/age-gender-estimation",
+    "host": "Mclaren",
+    "username": "kai",
+    "executable": "D:\\anaconda\\python.exe"
+}
