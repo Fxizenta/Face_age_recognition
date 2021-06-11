@@ -373,15 +373,37 @@ html = '''
         left: 633px;
         z-index: 999;
     }
-</style>  
+    .loading {
+        display:none;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 230px;
+        left: 662px;
+        z-index: 999;
+    }
+</style>
+  
     <title>Upload File</title>
     <form method=post enctype=multipart/form-data>
-         <input type=file class="choose" name=file>
-         <input type=submit class="upload">
+         <input type=file class="choose" name=file id="input">
+         <input type=submit class="upload" >
     </form>
     <img src="https://picgo-1304285457.cos.ap-guangzhou.myqcloud.com/images/754ac3d0b2d29dfef80497e106537de.png" class="file"></img>
     <img src="https://picgo-1304285457.cos.ap-guangzhou.myqcloud.com/images/76eb158d7b7c27cdc9872287bf0093c.png" class="upload_ico"></img>
     <img src="https://picgo-1304285457.cos.ap-guangzhou.myqcloud.com/images/%E5%8D%83%E5%BA%93%E7%BD%91_%E8%93%9D%E8%89%B2%E7%A7%91%E6%8A%80%E5%87%A0%E4%BD%95%E8%BE%B9%E6%A1%86_%E5%85%83%E7%B4%A0%E7%BC%96%E5%8F%B712557974.png" class=frame></img>
+    <img id="load" src="https://picgo-1304285457.cos.ap-guangzhou.myqcloud.com/images/a8fe6c326657b037343d81022f780ea.png" class="loading"></img>
+<script>
+	function change_Attribute() {
+	    var p= document.getElementById("load");
+	    p.style.display="block";
+	}
+	document.getElementById("input").addEventListener("change",function () {
+        console.log("change");
+        change_Attribute();
+    });
+
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <style type="text/css">
